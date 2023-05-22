@@ -38,6 +38,7 @@ EJERCICIO 1:
 */
 
 //EJERCICIO 1
+console.warn("EJERCIO N°1:");
 //1
 const pan = 430;
 const agua = 500;
@@ -68,12 +69,54 @@ console.log(total);
     4) Crear variable elPrimeroEsMayor;
     3) Mostrar valores de los IMCs calculados y si el primero fue el mayor
 */
-
+//Solucion EJERCICIO 2
+console.warn("EJERCIO N°2:");
 //1
 const primerNombre = prompt("Ingrese nombre primer persona");
-
 const primerMasaString = prompt("Ingrese masa de la primer persona");
 const primerMasaNumber = Number(primerMasaString);
-
 const primerAlturaString = prompt("Ingrese altura de la primer persona");
 const primerAlturaNumber = Number(primerAlturaString);
+
+console.log(
+  primerNombre +
+    " -> Masa: " +
+    primerMasaNumber +
+    " - Altura: " +
+    primerAlturaNumber
+);
+
+const segundoNombre = prompt("Ingrese nombre Segunda persona");
+const segundoMasaString = prompt("Ingrese masa de la segunda persona");
+const segundoMasaNumber = Number(segundoMasaString);
+const segundoAlturaString = prompt("Ingrese altura de la segunda persona");
+const segundoAlturaNumber = Number(segundoAlturaString);
+
+console.log(
+  segundoNombre +
+    " -> Masa: " +
+    segundoMasaNumber +
+    " - Altura: " +
+    segundoAlturaNumber
+);
+
+//2
+const primerIMC = primerMasaNumber / primerAlturaNumber ** 2;
+const segundaIMC = segundoMasaNumber / segundoAlturaNumber ** 2;
+
+console.log("IMC 1: " + primerIMC);
+console.log("IMC 2: " + segundaIMC);
+
+//3
+const elPrimeroEsMayor = primerIMC > segundaIMC;
+
+//4
+console.log(
+  "RESULTADO: " +
+    "IMC 1: " +
+    primerIMC +
+    " -  IMC 2: " +
+    segundaIMC +
+    " - elPrimeroEsMayor: " +
+    elPrimeroEsMayor
+);
